@@ -485,7 +485,7 @@ img {
 #subscribe button:hover {
   background: #e0072f;
 }
-.row > * {
+.hello > * {
   padding-left: 0px;
   padding-right: 0px;
   z-index: 1;
