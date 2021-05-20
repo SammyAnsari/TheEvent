@@ -144,6 +144,7 @@ a:hover {
   background-image: url(./assets/img/about-bg.jpg);
   height: auto;
   width: auto;
+  background-attachment: fixed;
 }
 .red-content::before {
   content: "";
@@ -439,7 +440,7 @@ img {
   overflow: hidden;
   position: relative;
 }
-#subscribe:before {
+#subscribe::before {
   content: "";
   background: rgba(6, 12, 34, 0.6);
   position: absolute;
@@ -449,16 +450,16 @@ img {
   right: 0;
 }
 
-#subscribe .section-header h2,
+#subscribe .section-header h1,
 #subscribe h4 {
   color: #fff;
+  text-align: center;
 }
 #subscribe input {
   background: #fff;
   color: #060c22;
   border: 0;
   outline: none;
-  margin: 0;
   padding: 9px 20px;
   border-radius: 50px;
   font-size: 14px;
@@ -483,6 +484,10 @@ img {
 #subscribe button:hover {
   background: #e0072f;
 }
+#subscribe {
+  background-attachment: fixed;
+}
+
 .hello > * {
   padding-left: 0px;
   padding-right: 0px;
@@ -690,4 +695,40 @@ img {
   background: #f82249;
   bottom: 0;
   top: 40;
+}
+.swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #f82249;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #f82249;
+}
+.swiper-slide-active {
+  text-align: center;
+}
+.swiper-slide-active {
+  border: 5px solid #f82249;
+  padding: 4px;
+  background: #fff;
+  z-index: 1;
+  transform: scale(1.15);
+  margin-top: 6px;
+}
+.swiper-wrapper {
+  padding: 40px 0;
+  height: initial;
+}
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
 }
