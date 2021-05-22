@@ -33,52 +33,51 @@
 
   <body>
     <!-- ====  Header  ===== -->
-    <header class="position-fixed w-100 index">
-      <div class="row">
-        <div class="col-2">
-          <a href="#"
-            ><img
-              class="size pt-3 float-end"
-              src="./assets/img/logo.png"
-              alt=""
+    <header class="position-fixed w-100 index" id="header">
+      <div class="container-fluid container d-flex align-items-center">
+        <div id="logo" class="me-auto">
+          <!-- Uncomment below if you prefer to use a text logo -->
+          <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+          <a href="index.html" class="scrollto"
+            ><img src="assets/img/logo.png" class="size" alt="" title=""
           /></a>
         </div>
-        <div class="col-10">
-          <nav>
-            <ul class="nav mb-3 mt-4 mx-5 float-end content navbar">
-              <li class="nav-item mt-1">
-                <a class="px-2 mx-1 active" href="#hero">Home</a>
-              </li>
-              <li class="nav-item mt-1">
-                <a class="px-2 mx-1" href="#about">About</a>
-              </li>
-              <li class="nav-item mt-1">
-                <a class="px-2 mx-1" href="#Speaker">Speaker</a>
-              </li>
-              <li class="nav-item mt-1">
-                <a class="px-2 mx-1" href="#Schedule">Schedule</a>
-              </li>
-              <li class="nav-item mt-1">
-                <a class="px-2 mx-1" href="#Venue">Venue</a>
-              </li>
-              <li class="nav-item mt-1">
-                <a class="px-2 mx-1" href="#Hotles">Hotles</a>
-              </li>
-              <li class="nav-item mt-1">
-                <a class="px-2 mx-1" href="#Gallery">Gallery</a>
-              </li>
-              <li class="nav-item mt-1">
-                <a class="px-2 mx-1" href="#Sponsors">Sponsors</a>
-              </li>
-              <li class="nav-item mt-1">
-                <a class="px-2 mx-1" href="#Contact">Contact</a>
-              </li>
-              <li class="nav-item mt-2">
-                <button class="buy-tickets" href="#BuyTicket">Buy Ticket</button>
-              </li>
-            </ul>
-          </nav>
-        </div>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul class="nav navbar content" style="margin-top: 0;">
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
+            <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
+            <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
+            <li><a class="nav-link scrollto" href="#hotels">Hotels</a></li>
+            <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#supporters">Sponsors</a>
+            </li>
+            <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li> -->
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+        <a class="buy-tickets scrollto" href="#buy-tickets">Buy Tickets</a>
       </div>
     </header>
     <!-- End Header -->
@@ -87,16 +86,22 @@
       <section id="hero">
         <div class="container-fluid img position-relative">
           <div class="container position-absolute overlay">
-            <div data-aos="zoom-in" data-aos-delay="100">
+            <div class="angle" data-aos="zoom-in" data-aos-delay="100">
             <h1 class="text-center heading" style="color: #fff">
-              The Annual<br /><span style="color: red">Marketing</span>
+              The Annual<br /><span class="color">Marketing</span>
               Conference
             </h1>
             <p class="text-center pragraph">
               10-12 December, Downtown Conference Center, New York
             </p>
-            <div class="mt-5 text-center">
-              <button class="About-the-event" href="#">About the event</button>
+            
+            <a
+          href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
+          class="glightbox play-btn mb-4"
+        ></a>
+    
+            <div class="text-center mt-4">
+              <a  class="About-the-event" href="#about">About the event</a>
             </div>
           </div>
           </div>
@@ -136,7 +141,7 @@
     <!-- End About Section -->
 
     <!-- ======= Speakers Section ======= -->
-    <section class="mt-5" id="Speaker">
+    <section class="mt-5" id="speakers">
       <div  data-aos="fade-up">
       <div class="container">
         <h1 class="text-center text-style" style="color: #0e1b4d">
@@ -152,7 +157,6 @@
       <div class="container mt-5">
         <div class="row">
           <div class="col">
-            <section id="speaker">
               <div class="speaker">
             <img
               src="./assets/img/speakers/1.jpg"
@@ -734,7 +738,7 @@
    </section>
    <!-- === End Venue === -->
    <!-- ==== Hotles Section ==== -->
-   <section id="Hotles">
+   <section id="hotels">
      <div class="container-fluid pt-5" data-aos="fade-up" style="background-color: #f6f7fd;">
       <h1 class="text-center text-style" style="color: #0e1b4d">
         HOTELS
@@ -866,7 +870,7 @@
    </section>
    <!-- ==== End Gallery Section ==== -->
    <!-- ==== Sponsors Section ==== -->
-   <section id="Sponsors">
+   <section id="supporters">
    <div class="container-fluid pt-5 mt-5" data-aos="fade-up" style="background-color: #f6f7fd;">
     <h1 class="text-center text-style" style="color: #0e1b4d">
       SPONSORS
@@ -1137,7 +1141,7 @@
     </section>
     <!-- =======  End Subscribe Section ======= -->
     <!-- ======= Buy Ticket Section ======= -->
-    <section id="BuyTicket">
+    <section id="buy-tickets">
     <div class="container-fluid pt-5" data-aos="fade-up" style="background-color: #f6f7fd;">
       <h1 class="text-center text-style" style="color: #0e1b4d">
         BUY TICKETS
@@ -1482,7 +1486,11 @@
        </div>
      </footer>
       <!-- ======= End Footer ======= -->
-
+      <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
        <!-- Vendor JS Files -->
        <script src="assets/vendor/aos/aos.js"></script>
        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
